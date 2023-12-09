@@ -12,6 +12,7 @@ const Product = () => {
   return (
   <div className="">
     <Breadcrums product={product}/>
+    
     <ProductDisplay product={product}/>
   </div>
   )
