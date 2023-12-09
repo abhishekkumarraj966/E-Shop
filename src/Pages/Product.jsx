@@ -3,7 +3,9 @@ import React from 'react'
 import { useParams } from 'react-router';
 import{ShopContext} from "../Context/ShopContext"
 import Breadcrums from '../Components/Breadcrums/Breadcrums';
-// import ProductDisplay from '../Components/ProductDisplay/ProductDisplay';
+import ProductDisplay from '../Components/ProductDisplay/ProductDisplay';
+import DescriptionBox from '../Components/DescriptionBox/DescriptionBox';
+import RelatedProducts from '../Components/RelatedProducts/RelatedProducts';
 
 const Product = () => {
     const params = useParams();
@@ -18,12 +20,10 @@ const Product = () => {
   return (
   <div className="">
 
-    <Breadcrums product={product}/>  
-
-    <Breadcrums product={product}/>
-    
+    <Breadcrums product={product}/>     
     <ProductDisplay product={product}/>
-
+    < DescriptionBox/>
+    <RelatedProducts/>
   </div>
   )
 }
