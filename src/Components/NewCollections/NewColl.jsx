@@ -6,7 +6,7 @@ const NewColl = () => {
   return (
     <div className="new-collection">
       <h1>NEW COLLECTIONS</h1>
-      <he />
+      <hr />
       <div className="collection">
         {new_colec.map((item, i) => {
           return (

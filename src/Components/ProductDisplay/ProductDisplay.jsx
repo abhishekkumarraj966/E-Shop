@@ -8,17 +8,17 @@ const ProductDisplay = (props) => {
     <div className="ProductDisplay">
       <div className="ProductDisplay-left">
         <div className="ProductDisplay-img-list">
-          <img src={product.image} alt="" />
-          <img src={product.image} alt="" />
-          <img src={product.image} alt="" />
-          <img src={product.image} alt="" />
+          <img src={product?.image} alt="" />
+          <img src={product?.image} alt="" />
+          <img src={product?.image} alt="" />
+          <img src={product?.image} alt="" />
         </div>
         <div className="ProductDisplay-img">
-            <img  className=".ProductDisplay-main-img" src={product.image} alt="" />
+            <img  className=".ProductDisplay-main-img" src={product?.image} alt="" />
         </div>
       </div>
       <div className="ProductDisplay-right">
-        <h1>{product.className}</h1>
+        <h1>{product?.className}</h1>
         <div className="ProductDisplay-right-start">
             <img src={stricon} alt="" />
             <img src={stricon} alt="" />
