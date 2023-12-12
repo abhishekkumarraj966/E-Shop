@@ -1,25 +1,48 @@
-.RelatedProducts{
+/* Default styles */
+.RelatedProducts {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     height: 90vh;
 }
-.RelatedProducts h1{
+
+.RelatedProducts h1 {
     color: #171717;
     font-size: 50px;
     font-weight: 600;
-
 }
-.RelatedProducts hr{
+
+.RelatedProducts hr {
     width: 200px;
     height: 6px;
     border-radius: 10px;
     background: #252525;
-
 }
-.RelatedProducts-item{
-   margin-top: 50px;
-   display: flex;
-   gap: 30px;
+
+.RelatedProducts-item {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+/* Media Query for smaller screens with a maximum width of 768 pixels */
+@media only screen and (max-width: 768px) {
+    .RelatedProducts {
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .RelatedProducts h1 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+
+    .RelatedProducts hr {
+        width: 150px; /* Adjust width for smaller screens */
+    }
+
+    .RelatedProducts-item {
+        flex-direction: column; /* Stack items vertically for smaller screens */
+        gap: 20px; /* Adjust gap for smaller screens */
+        align-items: center; /* Center items for smaller screens */
+    }
 }

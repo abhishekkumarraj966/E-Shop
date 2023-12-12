@@ -1,90 +1,158 @@
-.ProductDisplay{
+/* Default styles */
+.ProductDisplay {
     display: flex;
     margin: 0px 170px;
 }
-.ProductDisplay-left{
+
+.ProductDisplay-left {
     display: flex;
     gap: 17px;
 }
-.ProductDisplay-img-list{
+
+.ProductDisplay-img-list {
     display: flex;
     flex-direction: column;
-     gap: 16px;  
+    gap: 16px;  
 }
-.ProductDisplay-img-list img{
-   height:165px;
+
+.ProductDisplay-img-list img {
+    height: 165px;
 }
-.ProductDisplay-main-img{
+
+.ProductDisplay-main-img {
     width: 590px;
-    height:auto;
+    height: auto;
 }
-.ProductDisplay-right{
+
+.ProductDisplay-right {
     margin: 0px 70px;
     display: flex;
     flex-direction: column;
-
 }
-.ProductDisplay-right h1{
-    color:#3d3d3d ;
-    font-style: 40px;
+
+.ProductDisplay-right h1 {
+    color: #3d3d3d;
+    font-size: 40px; /* Use 'font-size' instead of 'font-style' */
     font-weight: 700;
 }
-.ProductDisplay-right-start{
+
+.ProductDisplay-right-start {
     display: flex;
     align-items: center;
-    margin-top:13px;
+    margin-top: 13px;
     gap: 5px;
     color: #1c1c1c;
-    font-style: 16px;
+    font-size: 16px; /* Use 'font-size' instead of 'font-style' */
+    font-weight: 600;
 }
-.ProductDisplay-right-prices{
+
+.ProductDisplay-right-prices {
     display: flex;
     margin: 40px 0px;
     gap: 30px;
-    font-style: 24px;
+    font-size: 24px; /* Use 'font-size' instead of 'font-style' */
     font-weight: 700;
-
 }
-.ProductDisplay-right-prices-old{
+
+.ProductDisplay-right-prices-old {
     color: #818181;
     text-decoration: line-through;
 }
-.ProductDisplay-right-prices-new{
-  color: #ff4141;  
+
+.ProductDisplay-right-prices-new {
+    color: #ff4141;
 }
-.ProductDisplay-right-size h1{
+
+.ProductDisplay-right-size h1 {
     margin-top: 55px;
     color: #656565;
-    font-style: 20px;
+    font-size: 20px; /* Use 'font-size' instead of 'font-style' */
     font-weight: 600;
 }
-.ProductDisplay-right-sizes{
+
+.ProductDisplay-right-sizes {
     display: flex;
     margin: 30px 0px;
     gap: 20px;
 }
-.ProductDisplay-right-sizes div{
+
+.ProductDisplay-right-sizes div {
     padding: 18px 24px;
     background: #fbfbfb;
-    border: 1px solid #ebebeb ;
+    border: 1px solid #ebebeb;
     border-radius: 3px;
     cursor: pointer;
 }
-.ProductDisplay-right button{
-  padding: 20px 40px;
-  width: 200px;
-   font-size: 16px;
-   font-weight: 600;
-background-color: #FF4141;
-color: white;
+
+.ProductDisplay-right button {
+    padding: 20px 40px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #FF4141;
+    color: white;
     margin-bottom: 40px;
     border: none;
     outline: none;
     cursor: pointer;
 }
-.ProductDisplay-right-category{
+
+.ProductDisplay-right-category {
     margin-top: 10px;
 }
-.ProductDisplay-right-category span{
+
+.ProductDisplay-right-category span {
     font-weight: 600;
+}
+
+/* Media Query for smaller screens with a maximum width of 768 pixels */
+@media only screen and (max-width: 768px) {
+    .ProductDisplay {
+        flex-direction: column; /* Stack items vertically for smaller screens */
+        margin: 0px 20px; /* Adjust margin for smaller screens */
+    }
+
+    .ProductDisplay-left {
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+
+    .ProductDisplay-main-img {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+
+    .ProductDisplay-right {
+        margin: 0px; /* Remove margin for smaller screens */
+    }
+
+    .ProductDisplay-right h1 {
+        font-size: 32px; /* Adjust font size for smaller screens */
+    }
+
+    .ProductDisplay-right-start {
+        margin-top: 8px; /* Adjust margin for smaller screens */
+    }
+
+    .ProductDisplay-right-prices {
+        margin: 20px 0px; /* Adjust margin for smaller screens */
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .ProductDisplay-right-size h1 {
+        margin-top: 40px; /* Adjust margin for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .ProductDisplay-right-sizes div {
+        padding: 14px 18px; /* Adjust padding for smaller screens */
+    }
+
+    .ProductDisplay-right button {
+        padding: 16px 32px; /* Adjust padding for smaller screens */
+        width: 100%; /* Take up the full width for smaller screens */
+        margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .ProductDisplay-right-category {
+        margin-top: 5px; /* Adjust margin for smaller screens */
+    }
 }

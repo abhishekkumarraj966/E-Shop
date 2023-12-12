@@ -4,22 +4,42 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 100px;
- 
 }
+
 .new-collection h1 {
   color: #171717;
-  font-style: 50px;
+  font-size: 50px;
   font-weight: 600;
 }
+
 .new-collection hr {
   width: 200px;
   height: 6px;
   border-radius: 10px;
   background: #252525;
 }
+
 .collection {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 50px;
   gap: 10px;
+}
+
+/* Media Query for smaller screens with a maximum width of 768 pixels */
+@media only screen and (max-width: 768px) {
+  .new-collection h1 {
+    font-size: 36px;
+  }
+
+  .collection {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Media Query for larger screens with a minimum width of 1200 pixels */
+@media only screen and (min-width: 1200px) {
+  .new-collection h1 {
+    font-size: 60px;
+  }
 }

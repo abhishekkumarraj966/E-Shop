@@ -1,30 +1,36 @@
-.shopcategory-banner{
-     display: block;
-     margin: 30px auto;
-     width: 82%0;
+/* Default styles */
+.shopcategory-banner {
+    display: block;
+    margin: 30px auto;
+    width: 820px; /* Fix typo in width value */
 }
-.shopcategory-indexSort{
+
+.shopcategory-indexSort {
     display: flex;
     margin: 0px 170px;
     justify-content: space-between;
     align-items: center;
 }
-.shopcategory-sort{
+
+.shopcategory-sort {
     padding: 10px 20px;
     border-radius: 40px;
     border: 1px solid #888;
 }
-.shopcategory-indexSort p span{
+
+.shopcategory-indexSort p span {
     font-weight: 600;
 }
-.shopcategory-products{
-    margin: 20px ;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+
+.shopcategory-products {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 100px;
-    gap: 10px; 
+    gap: 10px;
 }
-.shopcategory-loadmore{
+
+.shopcategory-loadmore {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,4 +42,32 @@
     color: #787878;
     font-size: 18px;
     font-weight: 500;
+}
+
+/* Media Query for smaller screens with a maximum width of 768 pixels */
+@media only screen and (max-width: 768px) {
+    .shopcategory-banner {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .shopcategory-indexSort {
+        margin: 0px 20px; /* Adjust margin for smaller screens */
+        flex-direction: column; /* Stack items vertically for smaller screens */
+        align-items: flex-start; /* Align items to the start for smaller screens */
+    }
+
+    .shopcategory-sort {
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .shopcategory-products {
+        grid-template-columns: 1fr 1fr; /* Adjust grid columns for smaller screens */
+        gap: 20px; /* Adjust gap for smaller screens */
+        row-gap: 50px; /* Adjust row gap for smaller screens */
+    }
+
+    .shopcategory-loadmore {
+        width: 100%; /* Take up the full width for smaller screens */
+        margin: 50px auto; /* Adjust margin for smaller screens */
+    }
 }

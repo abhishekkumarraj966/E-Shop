@@ -1,31 +1,54 @@
-.DescriptionBox{
+/* Default styles */
+.DescriptionBox {
     margin: 20px 170px;
-
 }
-.DescriptionBox-navigator{
+
+.DescriptionBox-navigator {
     display: flex;
-
 }
-.DescriptionBox-nav-box{
+
+.DescriptionBox-nav-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-style: 16px;
+    font-size: 16px; /* Use 'font-size' instead of 'font-style' */
     font-weight: 600;
     width: 171px;
     height: 70px;
     border: 1px solid #d0d0d0;
 }
-.DescriptionBox-nav-box .fade{
+
+.DescriptionBox-nav-box .fade {
     background: #FBFBFB;
     color: #555;
 }
-.DescriptionBox-description{
+
+.DescriptionBox-description {
     display: flex;
     flex-direction: column;
     gap: 20px;
     border: 1px solid #D0D0D0;
     padding: 48px;
     padding-bottom: 70px;
-    
+}
+
+/* Media Query for smaller screens with a maximum width of 768 pixels */
+@media only screen and (max-width: 768px) {
+    .DescriptionBox {
+        margin: 20px 10px; /* Adjust margin for smaller screens */
+    }
+
+    .DescriptionBox-navigator {
+        flex-direction: column; /* Stack items vertically for smaller screens */
+    }
+
+    .DescriptionBox-nav-box {
+        width: 100%; /* Take up the full width for smaller screens */
+        margin-bottom: 10px; /* Add some spacing between navigation boxes */
+    }
+
+    .DescriptionBox-description {
+        padding: 20px; /* Adjust padding for smaller screens */
+        padding-bottom: 50px; /* Adjust padding for smaller screens */
+    }
 }
